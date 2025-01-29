@@ -29,10 +29,20 @@ def printmultiline():
             dont you understand
             """
             )
+
+#get the volume of a sphere with radius
+def sphere_volume(radius):
+    import math
+    pi = math.pi
+    radius_cubed = radius * radius * radius
+    volume = pi * radius_cubed * 4 / 3
+
+    return volume
 if __name__ == "__main__":
     mynum = 5
     n_nn_nnn(mynum)
     print(printdocuments("math"))
     print(printcal(12, 2018))
     printmultiline()
+    print(sphere_volume(9))
 
