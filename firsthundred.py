@@ -17,8 +17,13 @@ def printdocuments(module_name):
     except ImportError:
         return f"Module {module_name} not found"
 
+#print calendar of a given month and year
+def printcal(month, year):
+    import calendar
+    print(calendar.month(year, month))
+
 if __name__ == "__main__":
     mynum = 5
     n_nn_nnn(mynum)
-    string = "math"
-    print(printdocuments(string))
+    print(printdocuments("math"))
+    print(printcal(12, 2018))
