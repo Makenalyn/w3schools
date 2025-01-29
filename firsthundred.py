@@ -22,8 +22,17 @@ def printcal(month, year):
     import calendar
     print(calendar.month(year, month))
 
+#printmultilinecomments
+def printmultiline():
+    print("""
+            This is a multiline string
+            dont you understand
+            """
+            )
 if __name__ == "__main__":
     mynum = 5
     n_nn_nnn(mynum)
     print(printdocuments("math"))
     print(printcal(12, 2018))
+    printmultiline()
+
