@@ -61,7 +61,15 @@ def firstnlasttwo(string):
     mystr = string[:2] + string[-2:]
     return str(mystr)
 
+#4 change all first letter occurences to $ sign
+def changeletters(string):
+    mychar = string[0]
+    string = string.replace(mychar, '$')
+    string = mychar + string[1:]
+    return string
+
 if __name__ == "__main__":
+    print(changeletters("makenamakenamakena"))
     print(firstnlasttwo("Makena"))
     mynum = 5
     n_nn_nnn(mynum)
