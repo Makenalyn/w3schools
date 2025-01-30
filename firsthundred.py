@@ -43,6 +43,18 @@ def sphere_volume(radius):
 def returnlengthofstr(string):
     return len(string)
 
+#count char frequency in string
+def countcharfreq(string):
+    dict = {}
+    for i in string:
+        keys = dict.keys()
+
+        if i in keys:
+            dict[i] += 1
+        else:
+            dict[i] = 1
+    return dict
+
 if __name__ == "__main__":
     mynum = 5
     n_nn_nnn(mynum)
@@ -51,3 +63,4 @@ if __name__ == "__main__":
     printmultiline()
     print(sphere_volume(9))
     print(returnlengthofstr("makena"))
+    print(countcharfreq("makena"))
