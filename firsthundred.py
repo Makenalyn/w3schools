@@ -36,8 +36,13 @@ def sphere_volume(radius):
     pi = math.pi
     radius_cubed = radius * radius * radius
     volume = pi * radius_cubed * 4 / 3
-
     return volume
+
+
+#return length of string
+def returnlengthofstr(string):
+    return len(string)
+
 if __name__ == "__main__":
     mynum = 5
     n_nn_nnn(mynum)
@@ -45,4 +50,4 @@ if __name__ == "__main__":
     print(printcal(12, 2018))
     printmultiline()
     print(sphere_volume(9))
-
+    print(returnlengthofstr("makena"))
