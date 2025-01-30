@@ -39,23 +39,30 @@ def sphere_volume(radius):
     return volume
 
 
-#return length of string
+#Day two:1 return length of string
 def returnlengthofstr(string):
     return len(string)
 
-#count char frequency in string
+#2count char frequency in string
 def countcharfreq(string):
-    dict = {}
+    dictionary = {}
     for i in string:
-        keys = dict.keys()
+        keys = dictionary.keys()
 
         if i in keys:
-            dict[i] += 1
+            dictionary[i] += 1
         else:
-            dict[i] = 1
-    return dict
+            dictionary[i] = 1
+    print(keys)
+    return dictionary
+
+#3get string of first and last 2 chars
+def firstnlasttwo(string):
+    mystr = string[:2] + string[-2:]
+    return str(mystr)
 
 if __name__ == "__main__":
+    print(firstnlasttwo("Makena"))
     mynum = 5
     n_nn_nnn(mynum)
     print(printdocuments("math"))
