@@ -68,7 +68,16 @@ def changeletters(string):
     string = mychar + string[1:]
     return string
 
+#5swap first 2 chars of 2 strings
+def swapchars(string1, string2):
+    new1 = string2[:2] + string1[2:]
+    new2 = string1[:2] + string2[2:]
+    return new1 + ' ' + new2
+
 if __name__ == "__main__":
+    string1 = "makena"
+    string2 = "lynton"
+    print(swapchars(string1, string2))
     print(changeletters("makenamakenamakena"))
     print(firstnlasttwo("Makena"))
     mynum = 5
